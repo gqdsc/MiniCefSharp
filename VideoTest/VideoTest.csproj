@@ -130,6 +130,6 @@
     <Error Condition="!Exists('..\packages\7z.NET.1.0.3\build\7z.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\7z.NET.1.0.3\build\7z.NET.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(SolutionDir)packages\dependency\Browser.dat"  "$(TargetDir)\Browser.dat"</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(SolutionDir)Browser\Browser.dat"  "$(TargetDir)\Browser.dat"</PostBuildEvent>
   </PropertyGroup>
 </Project>
